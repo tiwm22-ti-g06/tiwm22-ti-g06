@@ -1,196 +1,168 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+
+body{
+  background: linear-gradient(136deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
 }
 
-body {
-  background: white;
-  font-family: "Montserrat", sans-serif;
+.principal{
+margin-top: -8%;
 }
 
-.navMenu {
-  position:absolute ;
-  top: 5%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.infoFamilias{
+margin-top: 4%;
+text-align: center;
 }
 
-
-.navMenu a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  width: 105px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.inicio{
-  padding: 10%;
-}
-.leopardo{
-  padding: 2%;
+.textoFamilias{
+  margin-left: 3%;
 }
 
-.navMenu a:hover {
-  color: #fddb3a;
-}
-
-
-
-.navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(110px);
-  transform: translateX(110px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(200px);
-  transform: translateX(200px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(285px);
-  transform: translateX(285px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
 .styled-table {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 1.0em;
   font-family: sans-serif;
-  min-width: 400px;
+  min-width: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
 }
+
 .styled-table thead tr {
   background-color: rgb(212,172,40);
   color: white;
-  text-align: left;
+  text-align: center;
 }
+
 .styled-table th,
 .styled-table td {
     padding: 12px 15px;
 }
+
 .styled-table tbody tr {
   border-bottom: 1px solid #dddddd;
 }
 
-.styled-table tbody tr:nth-of-type(even) {
+.styled-table tbody tr{
   background-color: #f3f3f3;
 }
 
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid rgb(212,172,40);
 }
+
 .textoprincipal{
-  
     text-align: center;
     align-items: center;
 }
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
 
-body{
-	font-family: 'josefin sans';
-	font-size: 16px;
-}
-.hero{
-	height: 100vh;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 9;
-	transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
-}
-.hero.scrolled{
-	transform: translate3d(0, -100%, 0) scale(.75);
-	opacity: 0;
-}
-.hero-inner{
-		background-image: url('images/fundo.jpg');
-		background-size: cover;
-	background-position: center;
-	display: table;
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-}
-.hero-title{
-	display: table-cell;
-	vertical-align: middle;	
-	text-align: center;
+nav {
+  width: 300px;
+  background-color: #d6cfc7;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-clip-path: circle(24px at 30px 24px);
+  clip-path: circle(24px at 32px 24px);
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  border-radius: 5%;
   
 }
-h1, h2, h3, h4, h5, h6{
-	font-family: montserrat;
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
 }
-.font-2{
-	font-family: 'josefin sans';
-	font-weight: 700;
+
+.bar{
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
 }
-.title{ letter-spacing: .3em; text-transform: uppercase; }
-.text-light{ color: #fff }
-.font-alt{
-	font-family: 'georgia';
-	font-style: italic;
-	color: #666;
+
+.bar:hover { background:rgb(212,172,40);
+color: black;
 }
-.hero{
-	overflow: hidden;
-	z-index: 1;
+
+.bar:active { background: rgb(212,172,40); }
+
+.navicon {
+  background-color:#d6cfc7;
+  padding: 23px 20px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+  
 }
-.content{
-	position: relative;
-	background-color: #fff;
-	border-top: 10px solid black;
-	padding: 0;	
-	margin: 0;
-	transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
-	transform: translate3d(0, 20px, 0) scale(.75);
-	opacity: 0;
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  
 }
-.content.scrolled{
-	transform: translate3d(0, 0, 0) scale(1);	
-	opacity: 1;
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+  
 }
-.sd{
-	color: #fff;
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
+
+
+
+/* contentor do slide */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: 3%;
 }
-.sd:hover, .sd:focus{
-	color: #fff;
-	opacity: .7;
-	text-decoration: none;
+
+
+.mySlides {
+  display: none;
 }
-.container{
-  padding-top: 60px;
-  height: 100vh;
+
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+/* animação de fade */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 

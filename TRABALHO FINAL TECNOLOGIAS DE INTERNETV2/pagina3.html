@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina 3</title>
     <link rel="stylesheet" type="text/css" href="css3.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-</head>
-  <body>
-    <div class="hero">
-      <div class="hero-inner">
-              <div class="hero-title">
-                  <h1 class="text-light title font-2">Familias</h1>
-                  <p class="text-capitalize text-light">Informações Gerais </p>
-              </div>
-              <a href="#" class="sd">Scroll Down</a>
-      </div>
-  </div>
-  
-              <div>
-                <header>
-                    <nav class="navMenu">
-                      <a class="inicio" href="pagina2.html">Inicio</a>
-                      <a class="familias" href="pagina3.html">Familias</a>
-                      <a class="extincao" href="pagina4.html">Extinção</a>
-                      <a class="leopardo"href="pagina5.html">Leopardo</a>
-                      <div class="dot"></div>
-                    </nav>
-                  </header>
-              </div>
-                    
-            
-                   
-                
-        
-                 
-    
-                <p></p>
-                <div class="textoprincipal">
-                    Esta família é morfologicamente bem especializada para a caça, sendo ágeis, flexíveis e habilidosos.<br>
-                Possuem caninos longos e cônicos para introduzir mais fácil nas suas presas, tendo molares especializados para rasgar, cortar e triturar.<br>
-                São digitígrados e as suas unhas são retráteis, com a exceção dos guepardos, que possuem garras semi-retráteis, uma adaptação que contribui para que sejam excelentes corredores.<br>
-                Possuem a língua com papilas salientes que ajudam raspar a carne e retirar dos ossos, durante a alimentação.<br>
-                Os bigodes são vibrissas, que auxiliam nas informações sensoriais do ar.<br>
+
+
+<body>
+
+    <div>
+        <header>
+            <nav>
+
+                <div class="navicon">
+                    <div></div>
                 </div>
-                <p>Na Tabela seguinte estão as familias e subfamilias dos Felinos:</p>
-                </table>
+                <a class="bar" href="pagina2.html">Inicio</a>
+                <a class="bar" href="pagina3.html">Familias</a>
+                <a class="bar" href="pagina4.html">Extinção</a>
+                <a class="bar" href="pagina5.html">Leopardo das neves</a>
+
+            </nav>
+        </header>
+    </div>
+
+    <div class="principal">
+
+
+        <div class="textoprincipal">
+            Esta família é morfologicamente bem especializada para a caça, sendo ágeis, flexíveis e habilidosos.<br>
+            Possuem caninos longos e cônicos para introduzir mais fácil nas suas presas, tendo molares especializados
+            para
+            rasgar, cortar e triturar.<br>
+            São digitígrados e as suas unhas são retráteis, com a exceção dos guepardos, que possuem garras
+            semi-retráteis,
+            uma adaptação que contribui para que sejam excelentes corredores.<br>
+            Possuem a língua com papilas salientes que ajudam raspar a carne e retirar dos ossos, durante a
+            alimentação.<br>
+            Os bigodes são vibrissas, que auxiliam nas informações sensoriais do ar.<br>
+        </div>
+
+
+        <!-- contentor do slider -->
+        <div class="slideshow-container">
+
+            <!-- Imagens -->
+            <div class="mySlides fade">
+                <img src="images/gatoSlider.jpeg" class="imagemSlide" style="width:100%">
+                <figcaption>Gatos</figcaption>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/gato2Slider.jpeg" class="imagemSlider" style="width:100%">
+                <figcaption>Gato deitado</figcaption>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/tigreSlider.jpeg" class="imagemSlide" style="width:100%">
+                <figcaption>Tigre no Rio</figcaption>
+            </div>
+
+        </div>
+
+
+
+        <div class="infoFamilias">
+                <div class="textoFamilias">Na Tabela seguinte estão as familias e subfamilias dos Felinos</div>
+
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -58,28 +79,56 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Felinos</td>
-                            <td>Pantherinae</td>
-                        </tr>
-                        <tr >
-                            <td>Felinos</td>
-                            <td>Felíneos</td>
+                            <td id="familia1"></td>
+                            <td id="subfamilia1"></td>
                         </tr>
                         <tr>
-                            <td>Felinos</td>
-                            <td>Machairodontinae</td>
+                            <td id="familia2"></td>
+                            <td id="subfamilia2"></td>
+                        </tr>
+                        <tr>
+                            <td id="familia3"></td>
+                            <td id="subfamilia3"></td>
                         </tr>
                     </tbody>
                 </table>
-              
-    
-  
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-  <script src='http://achtungthemes.com/gnoli/js/lib/scripts.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js'></script>
-  <script src="index.js"></script>
+        </div>
+    </div>
+    <script>
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET", "data.xml", false)
+        xmlhttp.send();
+        xmlDoc = xmlhttp.responseXML;
+        document.getElementById("familia1").innerHTML = xmlDoc.getElementsByTagName("familia1")[0].childNodes[0].nodeValue;
+        document.getElementById("subfamilia1").innerHTML = xmlDoc.getElementsByTagName("subfamilia1")[0].childNodes[0].nodeValue;
+        document.getElementById("familia2").innerHTML = xmlDoc.getElementsByTagName("familia2")[0].childNodes[0].nodeValue;
+        document.getElementById("subfamilia2").innerHTML = xmlDoc.getElementsByTagName("subfamilia2")[0].childNodes[0].nodeValue;
+        document.getElementById("familia3").innerHTML = xmlDoc.getElementsByTagName("familia3")[0].childNodes[0].nodeValue;
+        document.getElementById("subfamilia3").innerHTML = xmlDoc.getElementsByTagName("subfamilia3")[0].childNodes[0].nodeValue; 
+    </script>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        showSlides();
+    </script>
+
 </body>
+
 </html>
