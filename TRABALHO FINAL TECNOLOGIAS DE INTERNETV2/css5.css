@@ -94,6 +94,10 @@ color: black;
   font-size: 30px;
 }
 
+.elemento_escondido{
+  display: none;
+}
+
 .texto{
   justify-content:space-evenly;
   text-align: justify;
@@ -102,6 +106,10 @@ color: black;
   margin-right: 5%;
   padding-top: 30px;
   font-family:Verdana;
+}
+
+.strong{
+  font-weight: bold;
 }
 
 .container{

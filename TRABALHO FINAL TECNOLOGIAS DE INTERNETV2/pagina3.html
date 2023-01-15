@@ -55,61 +55,50 @@
 
             <div class="mySlides fade">
                 <img src="images/gato2Slider.jpeg" class="imagemSlider" style="width:100%">
-                <figcaption>Gato deitado</figcaption>
+                <figcaption>Gato</figcaption>
             </div>
 
             <div class="mySlides fade">
                 <img src="images/tigreSlider.jpeg" class="imagemSlide" style="width:100%">
-                <figcaption>Tigre no Rio</figcaption>
+                <figcaption>Tigre</figcaption>
             </div>
 
         </div>
 
 
-
         <div class="infoFamilias">
-                <div class="textoFamilias">Na Tabela seguinte estão as familias e subfamilias dos Felinos</div>
+                <div class="textoFamilias">Na Tabela seguinte estão animais e as suas respetivas familias e subfamilias</div>
 
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Familia</th>
-                            <th>Subfamilia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="familia1"></td>
-                            <td id="subfamilia1"></td>
-                        </tr>
-                        <tr>
-                            <td id="familia2"></td>
-                            <td id="subfamilia2"></td>
-                        </tr>
-                        <tr>
-                            <td id="familia3"></td>
-                            <td id="subfamilia3"></td>
-                        </tr>
-                    </tbody>
+                <table id="demo" class="styled-table">             
                 </table>
         </div>
     </div>
     <script>
-        if (window.XMLHttpRequest) {
-            xmlhttp = new XMLHttpRequest();
+        function loadXMLDoc(){
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function(){
+                const xmlDoc = xhttp.responseXML;
+                const cd = xmlDoc.getElementsByTagName("animal")
+                myFunction(cd)
+            }
+            xhttp.open("GET", "data.xml")
+            xhttp.send();
         }
-        else {
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        
+        function myFunction(cd){
+            let table ="<thead><tr><th>Animal</th><th>Familia</th><th>SubFamilia</th></tr></thead>";
+            for(let i = 0 ; i<cd.length ; i++){
+                table+= "<tr><td>" + 
+                    cd[i].getElementsByTagName("nome")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    cd[i].getElementsByTagName("familia")[0].childNodes[0].nodeValue +
+                    "</td><td>" + 
+                    cd[i].getElementsByTagName("subfamilia")[0].childNodes[0].nodeValue +
+                    "</td></tr>"
+            }
+            document.getElementById("demo").innerHTML=table
         }
-        xmlhttp.open("GET", "data.xml", false)
-        xmlhttp.send();
-        xmlDoc = xmlhttp.responseXML;
-        document.getElementById("familia1").innerHTML = xmlDoc.getElementsByTagName("familia1")[0].childNodes[0].nodeValue;
-        document.getElementById("subfamilia1").innerHTML = xmlDoc.getElementsByTagName("subfamilia1")[0].childNodes[0].nodeValue;
-        document.getElementById("familia2").innerHTML = xmlDoc.getElementsByTagName("familia2")[0].childNodes[0].nodeValue;
-        document.getElementById("subfamilia2").innerHTML = xmlDoc.getElementsByTagName("subfamilia2")[0].childNodes[0].nodeValue;
-        document.getElementById("familia3").innerHTML = xmlDoc.getElementsByTagName("familia3")[0].childNodes[0].nodeValue;
-        document.getElementById("subfamilia3").innerHTML = xmlDoc.getElementsByTagName("subfamilia3")[0].childNodes[0].nodeValue; 
+        loadXMLDoc();
     </script>
 
     <script>

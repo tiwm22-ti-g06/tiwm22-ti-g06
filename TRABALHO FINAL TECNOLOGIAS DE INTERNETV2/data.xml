@@ -1,11 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <dados>
-    <familia1>Felinos</familia1>
-    <subfamilia1>Pantherinae</subfamilia1>
-    
-    <familia2>Felinos</familia2>
-    <subfamilia2>Felíneos</subfamilia2>
-    
-    <familia3>Felinos</familia3>
-    <subfamilia3>Machairodontinae</subfamilia3>
-    </dados>
-    
+    <animal>
+        <nome>Leopardo das neves</nome>
+        <familia>Felinos</familia>
+        <subfamilia>Pantherinae</subfamilia>
+    </animal>
+    <animal>
+        <nome>Tigre dentes-de-sabre</nome>
+        <familia>Felinos</familia>
+        <subfamilia>Machairodontinae</subfamilia>
+    </animal>
+    <animal>
+        <nome>Gato Dourado Africano</nome>
+        <familia>Felinos</familia>
+        <subfamilia>Felineos</subfamilia>
+    </animal>
+</dados>
