@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dados>
+<dados xmlns="http://www.juicers.org"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.juicers.org data.xsd">
+
     <animal>
         <nome>Leopardo das neves</nome>
         <familia>Felinos</familia>

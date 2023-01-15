@@ -8,9 +8,11 @@ body{
    border-radius: 2%;
 }
 
+
 .principal{
   margin-top: -8%;
 }
+
 .p1 , .p2{
     display: flex;
     justify-content:space-evenly;
@@ -197,10 +199,6 @@ text-decoration: none;
 
 .navicon div:after { top: 7px; }
 
-
-@media all and (max-width:500px){
-
-}
 .subs{
   text-align: center;
   text-transform: uppercase;
@@ -260,3 +258,26 @@ input[type=text], select, textarea {
   transform: translate(-50%,-50%) scale(1);
 }
 
+
+
+@media all and (max-width:500px){
+
+ 
+    .p1 , .p2{
+      display: block;
+      justify-content:space-evenly;
+      text-align: center;
+      align-items: center;
+      padding: 5px;
+  }
+
+  .principal{
+    margin-top: -25%;
+  }
+
+  .leao,.trigre{
+    max-width: 100%;
+  }
+  
+
+}

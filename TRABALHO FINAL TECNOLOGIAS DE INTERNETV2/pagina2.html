@@ -40,7 +40,8 @@
 
   <div class="principal">
     <div class="p1">
-      <img class="tigre" src="images/tigre.jpg">
+      <!-- tooltip -->
+      <img class="tigre" title="tigre" src="images/tigre.jpg">     
       <div>
         Os felinos são uma família de animais mamíferos da ordem Carnivora.<br>
         Dentro dos felinos estão incluidos: gatos domésticos, leões, tigres, leopardos, jaguares, onças, pumas,
@@ -80,36 +81,36 @@
           </li>
         </ul>
       </div>
-      <div class="container">
-        <h2 class="subs">Subscreve para receberes noticias diarias sobre os nossos felinos!</h2>
-          <label  class="nome"for="fname">Nome</label>
-          <input type="text" id="fname" name="firstname" placeholder="Nome...">
-          <label for="lname">Email</label>
-          <input type="text" id="lname" name="lastname" placeholder="Email...">
-          <button type="submit" value="Submit" class="btn" onclick="openPopup()">Enviar</button>
-          <div class="popup" id="popup"> 
-            <img src="images/404-tick.png">
-            <h2> Obrigado!</h2>
-            <p> Os teus dados foram guardados com sucesso.</p>
-            <button type="button" onclick="closePopup()">Ok</button>
-
-          </div>
-      </div>
-      <script>
-        let popup = document.getElementById("popup");
-    
-        function openPopup() { 
-           popup.classList.add("open-Popup")
-         }
-         function closePopup() { 
-           popup.classList.remove("open-Popup")
-         }
-      </script>
+      
+        <div class="container">
+          <h2 class="subs">Subscreve para receberes noticias diarias sobre os nossos felinos!</h2>
+            <label  class="nome"for="fname">Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nome...">
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Email...">
+            <button type="submit" value="Submit" class="btn" onclick="openPopup()">Enviar</button>
+            <div class="popup" id="popup"> 
+              <img src="images/404-tick.png">
+              <h2> Obrigado!</h2>
+              <p> Os teus dados foram guardados com sucesso.</p>
+              <button type="button" onclick="closePopup()">Ok</button>
+            </div>
+        </div>
       
     
   </footer>
-  
 
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup() { 
+       popup.classList.add("open-Popup")
+     }
+     function closePopup() { 
+       popup.classList.remove("open-Popup")
+     }
+  </script>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>

@@ -96,6 +96,7 @@ color: black;
 
 .elemento_escondido{
   display: none;
+  visibility: hidden;
 }
 
 .texto{
@@ -118,7 +119,6 @@ color: black;
   margin-right: 5%;
   padding-top: 5%;
 }
-
 
 
 .slider {
@@ -197,4 +197,45 @@ color: black;
   to {
     background-position: 200% center;
   }
+}
+
+
+
+
+@media all and (max-width:500px){
+
+  .leo{
+    max-width: max-content;
+    background-size: cover no repeat;
+    padding-top: 0;
+    padding-bottom: 50px;
+    margin-top: -300px;
+  }
+
+  .back{
+    margin-left: 30px;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 30px;
+  }
+
+  .container{
+    display: block;
+    align-items: center;
+    align-content: center;
+  }
+
+  .slider {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+
 }

@@ -5,4 +5,43 @@
     elementFormDefault="qualified"
     attributeFormDefault="qualified">
 
+    <simpleType name="nomeType">
+        <restriction base="string">
+            <minLength value="0"/>
+            <maxLength value="50"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="familiaType">
+        <restriction base="string">
+            <minLength value="0"/>
+            <maxLength value="50"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="subfamiliaType">
+        <restriction base="string">
+            <minLength value="0"/>
+            <maxLength value="50"/>
+        </restriction>
+    </simpleType>
+
+
+    <complexType name="animalType">
+        <sequence>
+            <element name="nome" type="tns:nomeType" minOccurs="0" maxOccurs="1"/>
+            <element name="familia" type="tns:familiaType" minOccurs="0" maxOccurs="1"/>
+            <element name="subfamilia" type="tns:subfamiliaType" minOccurs="0" maxOccurs="1"/>
+        </sequence>
+    </complexType>
+        
+
+    <element name="dados">
+        <complexType>
+            <sequence>
+                <element name="animal" type="tns:animalType" minOccurs="0" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
 </schema>
