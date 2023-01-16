@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
 body{
   background: linear-gradient(136deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
 }
@@ -39,7 +42,7 @@ body{
   text-decoration: none;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic);
+
 
 
 
@@ -122,7 +125,6 @@ h1, h2, h3, h4, h5, h6{
   height: 100vh;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
 
 nav {

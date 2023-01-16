@@ -184,7 +184,6 @@ color: black;
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -206,7 +205,6 @@ color: black;
 
   .leo{
     max-width: 100%;
-    
     padding-top: 0;
     padding-bottom: 200px;
     margin-top: -300px;
@@ -236,8 +234,7 @@ color: black;
     align-items: center;
     overflow: hidden;
   }
-
-
+}
   @media all and (max-width:500px){
 
     .leo{
@@ -271,6 +268,6 @@ color: black;
       align-items: center;
       overflow: hidden;
     }
+  }
 
 
-}
