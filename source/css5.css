@@ -202,13 +202,13 @@ color: black;
 
 
 
-@media all and (max-width:500px){
+@media all and (max-width:1500px){
 
   .leo{
-    max-width: max-content;
-    background-size: cover no repeat;
+    max-width: 100%;
+    
     padding-top: 0;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
     margin-top: -300px;
   }
 
@@ -236,6 +236,41 @@ color: black;
     align-items: center;
     overflow: hidden;
   }
+
+
+  @media all and (max-width:500px){
+
+    .leo{
+      max-width: max-content;
+      padding-top: 0;
+      padding-bottom: 50px;
+      margin-top: -300px;
+    }
+  
+    .back{
+      margin-left: 30px;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 30px;
+    }
+  
+    .container{
+      display: block;
+      align-items: center;
+      align-content: center;
+    }
+  
+    .slider {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      background-color: yellow;
+      align-content: center;
+      text-align: center;
+      align-items: center;
+      overflow: hidden;
+    }
 
 
 }
