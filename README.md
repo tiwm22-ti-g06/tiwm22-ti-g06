@@ -13,8 +13,7 @@ _Please help reader navigate around describing how the repository is organized b
 * Report chapters are in [doc folder](doc/).
 
 ## Gallery 1
-
-_Please provide a galery of the final result, with small images_
+Some images about our final work.
 A [images](images/)
 
 ## Technologies
