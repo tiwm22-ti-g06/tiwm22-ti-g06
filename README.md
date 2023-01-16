@@ -14,7 +14,8 @@ _Please help reader navigate around describing how the repository is organized b
 
 ## Gallery 1
 Some images about our final work.
-A [images](images/)
+
+[images](images/)
 
 ## Technologies
 
