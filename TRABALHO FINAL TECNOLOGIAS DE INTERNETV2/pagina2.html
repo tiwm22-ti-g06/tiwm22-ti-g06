@@ -2,124 +2,121 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página 1</title>
-  <link rel="stylesheet" type="text/css" href="css2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 3</title>
+    <link rel="stylesheet" type="text/css" href="css3.css">
+
 
 <body>
-  <div class="hero">
-    <div class="hero-inner">
-      <div class="hero-title">
-        <h1 class="text-light title font-2">Felinos</h1>
-      </div>
-      <a href="#" class="sd">Scroll Down</a>
+
+    <div>
+        <header>
+            <nav>
+
+                <div class="navicon">
+                    <div></div>
+                </div>
+                <a class="bar" href="pagina1.html">Inicio</a>
+                <a class="bar" href="pagina2.html">Familias</a>
+                <a class="bar" href="pagina3.html">Extinção</a>
+                <a class="bar" href="pagina4.html">Leopardo das neves</a>
+
+            </nav>
+        </header>
     </div>
-  </div>
 
-  <header>
-    <nav>
-      <div class="navicon">
-        <div></div>
-      </div>
+    <div class="principal">
 
-      <a class="bar" href="pagina2.html">Inicio</a>
-      <a class="bar" href="pagina3.html">Familias</a>
-      <a class="bar" href="pagina4.html">Extinção</a>
-      <a class="bar" href="pagina5.html">Leopardo das neves</a>
 
-    </nav>
-  </header>
-
-  <div class="principal">
-    <div class="p1">
-      <!-- tooltip -->
-      <img class="tigre" title="tigre" src="images/tigre.jpg">     
-      <div>
-        Os felinos são uma família de animais mamíferos da ordem Carnivora.<br>
-        Dentro dos felinos estão incluidos: gatos domésticos, leões, tigres, leopardos, jaguares, onças, pumas,
-        panteras,
-        chitas e outros.<br>
-        <br>
-        As primeiras evidências fósseis de felinos verdadeiros são de 25 milhões de anos atrás, no período
-        Oligoceno.<br>
-        Os primeiros felinos eram os dentes-de-sabre, que faziam parte da subfamília extinta Machairodontinae.<br>
-      </div>
-    </div>
-    <div class="p2">
-      <div>
-        Existem atualmente 41 espécies de felinos.<br>
-        Apesar das semelhanças superficiais, os também extintos Thylacosmilus e Nimravidae não estão incluídos na
-        família dos felinos.<br>
-        <br>
-        Estes são conhecidos pelas suas garras afiadas, cauda longa e pernas fortes, que os ajudam a caçar e se
-        defenderem.<br>
-        Eles também são conhecidos pelos seus rostos pontiagudos e olhos brilhantes, bem como pelo seu comportamento
-        ágil.<br>
-      </div>
-      <img class="leao" src="images/leao.jpg">
-    </div>
-  </div>
-
-  <hr class="fim">
-
-  <footer>
-      <div>
-        <ul>
-          <li>
-            <a class="links" href="https://www.adopta-me.org/">Site de Adoção de Animais</a>
-          </li>
-          <li>
-            <a class="links" href="https://www.animalife.pt/pt/home">Site de Apoio aos Animais</a>
-          </li>
-        </ul>
-      </div>
-      
-        <div class="container">
-          <h2 class="subs">Subscreve para receberes noticias diarias sobre os nossos felinos!</h2>
-            <label  class="nome"for="fname">Nome</label>
-            <input type="text" id="fname" name="firstname" placeholder="Nome...">
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="lastname" placeholder="Email...">
-            <button type="submit" value="Submit" class="btn" onclick="openPopup()">Enviar</button>
-            <div class="popup" id="popup"> 
-              <img src="images/404-tick.png">
-              <h2> Obrigado!</h2>
-              <p> Os teus dados foram guardados com sucesso.</p>
-              <button type="button" onclick="closePopup()">Ok</button>
-            </div>
+        <div class="textoprincipal">
+            Esta família é morfologicamente bem especializada para a caça, sendo ágeis, flexíveis e habilidosos.<br>
+            Possuem caninos longos e cônicos para introduzir mais fácil nas suas presas, tendo molares especializados
+            para
+            rasgar, cortar e triturar.<br>
+            São digitígrados e as suas unhas são retráteis, com a exceção dos guepardos, que possuem garras
+            semi-retráteis,
+            uma adaptação que contribui para que sejam excelentes corredores.<br>
+            Possuem a língua com papilas salientes que ajudam raspar a carne e retirar dos ossos, durante a
+            alimentação.<br>
+            Os bigodes são vibrissas, que auxiliam nas informações sensoriais do ar.<br>
         </div>
-      
-    
-  </footer>
 
 
-  <script>
-    let popup = document.getElementById("popup");
+     
+        <div class="slideshow-container">
 
-    function openPopup() { 
-       popup.classList.add("open-Popup")
-     }
-     function closePopup() { 
-       popup.classList.remove("open-Popup")
-     }
-  </script>
+            <!-- Imagens -->
+            <div class="mySlides fade">
+                <img src="images/gatoSlider.jpeg" class="imagemSlide" style="width:100%">
+                <figcaption>Gatos</figcaption>
+            </div>
 
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-  <script src='http://achtungthemes.com/gnoli/js/lib/scripts.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js'></script>
-  <script src="index.js"></script>
+            <div class="mySlides fade">
+                <img src="images/gato2Slider.jpeg" class="imagemSlider" style="width:100%">
+                <figcaption>Gato</figcaption>
+            </div>
 
+            <div class="mySlides fade">
+                <img src="images/tigreSlider.jpeg" class="imagemSlide" style="width:100%">
+                <figcaption>Tigre</figcaption>
+            </div>
+
+        </div>
+
+
+        <div class="infoFamilias">
+                <div class="textoFamilias">Na Tabela seguinte estão animais e as suas respetivas familias e subfamilias</div>
+
+                <table id="demo" class="styled-table">             
+                </table>
+        </div>
+    </div>
+    <script>
+        function loadXMLDoc(){
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function(){
+                const xmlDoc = xhttp.responseXML;
+                const cd = xmlDoc.getElementsByTagName("animal")
+                myFunction(cd)
+            }
+            xhttp.open("GET", "data.xml")
+            xhttp.send();
+        }
+        
+        function myFunction(cd){
+            let table ="<thead><tr><th>Animal</th><th>Familia</th><th>SubFamilia</th></tr></thead>";
+            for(let i = 0 ; i<cd.length ; i++){
+                table+= "<tr><td>" + 
+                    cd[i].getElementsByTagName("nome")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    cd[i].getElementsByTagName("familia")[0].childNodes[0].nodeValue +
+                    "</td><td>" + 
+                    cd[i].getElementsByTagName("subfamilia")[0].childNodes[0].nodeValue +
+                    "</td></tr>"
+            }
+            document.getElementById("demo").innerHTML=table
+        }
+        loadXMLDoc();
+    </script>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        showSlides();
+    </script>
 
 </body>
 
