@@ -9,7 +9,7 @@ The theme of our work is Felines, we will explain how it all started, their char
 ## Repository organization
 
 _Please help reader navigate around describing how the repository is organized by providing links_
-* **Source code** is in the [TRABALHO FINAL TECNOLOGIAS DE INTERNETV2](TRABALHO FINAL TECNOLOGIAS DE INTERNETV2/).
+* **Source code** is in the [TRABALHO FINAL TECNOLOGIAS DE INTERNETV2 folder](TRABALHO FINAL TECNOLOGIAS DE INTERNETV2/).
 * Report chapters are in [doc folder](doc/).
 
 ## Gallery 1
