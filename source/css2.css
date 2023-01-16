@@ -261,6 +261,29 @@ input[type=text], select, textarea {
 }
 
 
+@media all and (max-width:950px){
+
+ 
+  .p1 , .p2{
+    display: block;
+    justify-content:space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.principal{
+  margin-top: -25%;
+}
+
+.leao,.trigre{
+  max-width: max-content;
+}
+
+
+}
+
+
 
 @media all and (max-width:500px){
 
